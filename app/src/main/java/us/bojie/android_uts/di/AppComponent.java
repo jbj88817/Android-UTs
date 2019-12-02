@@ -2,12 +2,15 @@ package us.bojie.android_uts.di;
 
 import android.app.Application;
 
+import javax.inject.Singleton;
+
 import dagger.BindsInstance;
 import dagger.Component;
 import dagger.android.AndroidInjectionModule;
 import dagger.android.AndroidInjector;
 import us.bojie.android_uts.BaseApplication;
 
+@Singleton
 @Component(
         modules = {
                 AndroidInjectionModule.class,
